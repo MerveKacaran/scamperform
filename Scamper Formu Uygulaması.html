@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>SCAMPER Dijital Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:#f4f6fb;
+            margin:0;
+            padding:20px;
+            display:flex;
+            justify-content:center;
+        }
+        .container {
+            max-width:900px;
+            width:100%;
+            background:#fff;
+            padding:20px 25px;
+            border-radius:12px;
+            box-shadow:0 4px 15px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align:center;
+            margin-top:0;
+            color:#333;
+        }
+        .desc {
+            text-align:center;
+            font-size:14px;
+            color:#555;
+            margin-bottom:20px;
+        }
+        .step {
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:12px 14px;
+            margin-bottom:12px;
+            background:#fafbff;
+        }
+        .step-header {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:6px;
+            flex-wrap:wrap;
+            gap:6px;
+        }
+        .step-title {
+            font-weight:bold;
+            font-size:16px;
+        }
+        .step-tag {
+            font-size:13px;
+            font-weight:bold;
+            padding:2px 8px;
+            border-radius:20px;
+            color:#fff;
+        }
+        .substitute { background:#e74c3c; }
+        .combine    { background:#8e44ad; }
+        .adapt      { background:#2980b9; }
+        .modify     { background:#27ae60; }
+        .put        { background:#f39c12; }
+        .eliminate  { background:#16a085; }
+        .reverse    { background:#2c3e50; }
+
+        .guide-question {
+            font-size:14px;
+            color:#333;
+            margin-bottom:6px;
+        }
+        .example {
+            font-size:13px;
+            color:#888;
+            font-style:italic;
+            margin-bottom:6px;
+        }
+        textarea {
+            width:100%;
+            min-height:60px;
+            resize:vertical;
+            padding:8px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-family:inherit;
+            font-size:14px;
+        }
+        .footer-note {
+            margin-top:15px;
+            font-size:12px;
+            color:#777;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>SCAMPER Dijital Formu</h1>
+    <p class="desc">
+        Her adım için rehber soruyu okuyun ve kendi çözüm fikrinizi “Sizin Fikriniz” kısmına yazın.
+    </p>
+
+    <!-- S – Substitute -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">S – Substitute (Yerine koy)</div>
+            <div class="step-tag substitute">S</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Hangi bileşeni doğadaki başka bir örnekle değiştirebiliriz?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Plastikleri mantar malzemeyle değiştirmek
+        </div>
+        <label for="substitute-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="substitute-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- C – Combine -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">C – Combine (Birleştir)</div>
+            <div class="step-tag combine">C</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> İki doğal mekanizmayı nasıl birleştirebiliriz?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Arı peteği + lotus yaprağı yüzeyi
+        </div>
+        <label for="combine-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="combine-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- A – Adapt -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">A – Adapt (Uyarlamak)</div>
+            <div class="step-tag adapt">A</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Doğadaki çözüm nasıl uyarlanabilir?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Bukalemun derisi – renk değiştiren çadır kumaşı
+        </div>
+        <label for="adapt-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="adapt-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- M – Modify -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">M – Modify (Değiştir)</div>
+            <div class="step-tag modify">M</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Boyut, şekil veya renk değiştirilebilir mi?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Damlacık yapısı → su toplama yüzeyi
+        </div>
+        <label for="modify-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="modify-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- P – Put to another use -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">P – Put to another use (Yeni işlev)</div>
+            <div class="step-tag put">P</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Doğadaki bir çözümü farklı alanda nasıl kullanabiliriz?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Karınca tünelleri → doğal havalandırma sistemi
+        </div>
+        <label for="put-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="put-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- E – Eliminate -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">E – Eliminate (Çıkarmak)</div>
+            <div class="step-tag eliminate">E</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Gereksiz unsurları ortadan kaldırabilir miyiz?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Ambalajsız, yeniden doldurulabilir tasarımlar
+        </div>
+        <label for="eliminate-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="eliminate-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <!-- R – Reverse -->
+    <div class="step">
+        <div class="step-header">
+            <div class="step-title">R – Reverse (Tersine çevir)</div>
+            <div class="step-tag reverse">R</div>
+        </div>
+        <div class="guide-question">
+            <strong>Rehber Soru:</strong> Süreç tersine çevrilirse ne olur?
+        </div>
+        <div class="example">
+            <strong>Örnek Uygulama:</strong> Atık → kaynak prensibi (döngüsel ekonomi)
+        </div>
+        <label for="reverse-input"><strong>Sizin Fikriniz:</strong></label>
+        <textarea id="reverse-input" placeholder="Kendi çözüm fikrinizi yazın..."></textarea>
+    </div>
+
+    <p class="footer-note">
+        İsterseniz bu sayfayı PDF olarak yazdırabilir veya ekran görüntüsü alarak ürün dosyalarına ekleyebilirsiniz.
+    </p>
+</div>
+</body>
+</html>
